@@ -46,7 +46,11 @@ car.deleteMany({}).then(() => {
 }); */
 
 car
-  .findById({ _id: "6046485d55b8a861e9669815" })
+  .findById({ _id: "6046485d55b8a861e9669815" }) //
+  // id is a type of object that is only recognizable in Mongoose
+  // its a type ---> ObjectId
+  // therefor we can specify it in find method
+  //.find({ _id: "6046485d55b8a861e9669815" })//
   .then((response) => console.log(response));
 
 car
